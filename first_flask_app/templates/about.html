@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<body>
+    <header>This is about page, in this Flask app!</header>
+
+    <p>
+        <h1>Hey!! I'm {{ name_show }}</h1>
+        <p>The above text is written using basic jinja templating.</p>
+    </p>
+
+    <!-- Below is an image using normal method -->
+    <div><img src="../static/hari-nandakumar-5U132F-itpg-unsplash.jpg" alt="this is a sample image">
+    </div>
+
+    <hr>
+
+    <!-- Below an another image using Jinja templating -->
+    <div>
+        <img src="{{ url_for('static', filename = 'hari-nandakumar-5U132F-itpg-unsplash.jpg') }}" alt="This is an another image using Jinja templating">
+    </div>
+
+    <h6>Picture by Hari Nandakumar</h6>
+</body>
+</html>
