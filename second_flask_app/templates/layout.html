@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Mock Site</title>
+    <link rel="stylesheet" href="../static/stylesheets/styles.css">
+</head>
+<body>
+    <div>
+        <div>
+            <p>Hello! This is a Flask Mock app!</p>
+            <p>Jinja Template has been used to make this app.</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/blogs">Blogs</a></li>
+            </ul>
+        </nav>
+    </div>
+
+{% block body %} {% endblock %}
+
+<footer>
+    <p>This is made by Flask in the backend.</p>
+    <p>Made with Love by Nilankan!</p>
+</footer>
+</body>
+</html>
